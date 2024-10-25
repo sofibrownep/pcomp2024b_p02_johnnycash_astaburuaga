@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Johnny Cash Project</title>
     <style>
-
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: #f4f4f4; 
@@ -72,21 +71,21 @@
             margin-bottom: 20px;
         }
 
-        .creators {
+        .creators, .gallery {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            gap: 20px;
         }
 
-        .creator {
-            flex-basis: 45%;
-            margin-bottom: 40px;
+        .creator, .gallery img {
+            flex-basis: 48%;
+            margin-bottom: 20px;
         }
 
-        .creator img {
+        .creator img, .gallery img {
             width: 100%;
             height: auto;
-            margin-bottom: 15px;
             border: 2px solid #ddd;
         }
 
@@ -123,6 +122,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
+        .reflection {
+            background-color: #e8f5e9;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reflection h2 {
+            color: #2e7d32;
+        }
+
         footer {
             background-color: #333;
             color: #fff;
@@ -135,24 +146,28 @@
             font-size: 1.2em;
             margin: 0;
         }
-
     </style>
 </head>
 <body>
-
-
     <header>
         <h1>The Johnny Cash Project</h1>
         <p>Rosa Astaburuaga, Sofía Browne, Beatriz Cornejo, Francisco Encina, Josefa Peralta, Isidora Villalobos</p>
     </header>
 
-
     <div class="container">
+        <section>
+            <h2>Tema</h2>
+            <p><strong>The Johnny Cash Project</strong> es un proyecto artístico colaborativo que invita a los usuarios a reinterpretar el video de "<em>Ain’t No Grave</em>", la última canción grabada por Johnny Cash. Este proyecto explora temas universales como la muerte y la resurrección, celebrando la memoria del artista fallecido en 2003. A través de una interfaz gráfica sencilla, los usuarios pueden reelaborar fotogramas del video original y transformarlos en dibujos, generando una nueva versión del video en estilo <em>stop-motion</em> que refleja las interpretaciones personales de los participantes.</p>
+        </section>
 
         <section>
-            <h2>Proyecto</h2>
-            <p><strong>The Johnny Cash Project</strong> es un proyecto artístico colaborativo que invita a los usuarios a reinterpretar el video de "<em>Ain’t No Grave</em>", la última canción grabada por Johnny Cash. Este proyecto explora temas universales como la muerte y la resurrección, celebrando la memoria del artista fallecido en 2003. A través de una interfaz gráfica sencilla, los usuarios pueden reelaborar fotogramas del video original y transformarlos en dibujos, generando una nueva versión del video en estilo <em>stop-motion</em> que refleja las interpretaciones personales de los participantes.</p>
-            <p>No se necesita experiencia en diseño gráfico, ya que las herramientas son intuitivas. Cada dibujo contribuye a una animación colectiva que homenajea a Johnny Cash, conectando a usuarios globalmente. El proyecto solo funciona correctamente en Chrome para garantizar una experiencia óptima.</p>
+            <h2>Galería del Proyecto</h2>
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Foto del proyecto 1">
+                <img src="foto2.jpg" alt="Foto del proyecto 2">
+                <img src="foto3.jpg" alt="Foto del proyecto 3">
+                <img src="foto4.jpg" alt="Foto del proyecto 4">
+            </div>
         </section>
 
         <section>
@@ -161,24 +176,14 @@
                 <div class="creator">
                     <img src="chris-milk.jpg" alt="Chris Milk">
                     <h3>Chris Milk</h3>
-                    <p>Chris Milk es un director y cineasta estadounidense conocido por su enfoque experimental en la creación de contenido visual interactivo. Ha colaborado con artistas como Kanye West, U2 y Arcade Fire, integrando tecnología innovadora como la realidad virtual en sus proyectos.</p>
+                    <p>Chris Milk es un director y cineasta estadounidense conocido por su enfoque experimental en la creación de contenido visual interactivo.</p>
                 </div>
                 <div class="creator">
                     <img src="aaron-koblin.jpg" alt="Aaron Koblin">
                     <h3>Aaron Koblin</h3>
-                    <p>Aaron Koblin es un pionero del arte digital que utiliza datos y crowdsourcing para crear obras interactivas. Su trabajo ha sido clave en la evolución del arte digital, transformando grandes cantidades de datos en visualizaciones artísticas. Es cofundador de VRSE (hoy Within).</p>
+                    <p>Aaron Koblin es un pionero del arte digital que utiliza datos y crowdsourcing para crear obras interactivas.</p>
                 </div>
             </div>
-        </section>
-
-        <section>
-            <h2>Relación con los Principios de Lev Manovich</h2>
-            <ul class="principles-list">
-                <li><strong>Modularity:</strong> Cada fotograma es independiente y puede ser modificado sin afectar el resto del vídeo.</li>
-                <li><strong>Automation:</strong> La plataforma permite la participación sin necesidad de habilidades avanzadas, utilizando herramientas automatizadas.</li>
-                <li><strong>Variability:</strong> El resultado final nunca es el mismo, ya que el vídeo se actualiza constantemente con las contribuciones.</li>
-                <li><strong>Cultural Transcoding:</strong> El proyecto fusiona la cultura popular de Johnny Cash con la tecnología digital, creando una nueva forma de expresión cultural.</li>
-            </ul>
         </section>
 
         <section>
@@ -186,12 +191,17 @@
             <img src="diagrama.jpg" alt="Diagrama de la obra de Johnny Cash Project" class="diagram">
         </section>
 
+        <section class="reflection">
+            <h2>Reflexión</h2>
+            <p>Estamos trabajando en una reflexión profunda sobre el impacto del proyecto y su relación con la memoria, el arte colaborativo y la tecnología digital. A través de este espacio, esperamos invitar a una introspección sobre cómo la obra trasciende la pantalla para convertirse en un testimonio colectivo.</p>
+        </section>
     </div>
+
     <footer>
         <p>Proyecto Web sobre The Johnny Cash Project - Desarrollado por Rosa Astaburuaga, Sofía Browne, Beatriz Cornejo, Francisco Encina, Josefa Peralta, Isidora Villalobos</p>
     </footer>
-
 </body>
 </html>
+
 
 
